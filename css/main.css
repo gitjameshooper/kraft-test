@@ -8,19 +8,19 @@ html {
   font-family: proxima-nova-bold;
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-bold.woff2") format("woff2"), url("/fonts/proxima-nova-bold.woff") format("woff"), url("/fonts/proxima-nova-bold.ttf") format("truetype"), url("/fonts/proxima-nova-bold.svg#proxima-nova-bold") format("svg"); }
+  src: url("../fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-bold.woff2") format("woff2"), url("../fonts/proxima-nova-bold.woff") format("woff"), url("../fonts/proxima-nova-bold.ttf") format("truetype"), url("../fonts/proxima-nova-bold.svg#proxima-nova-bold") format("svg"); }
 
 @font-face {
   font-family: proxima-nova-semibold;
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/proxima-nova-semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-semibold.woff2") format("woff2"), url("/fonts/proxima-nova-semibold.woff") format("woff"), url("/fonts/proxima-nova-semibold.ttf") format("truetype"), url("/fonts/proxima-nova-semibold.svg#proxima-nova-semibold") format("svg"); }
+  src: url("../fonts/proxima-nova-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-semibold.woff2") format("woff2"), url("../fonts/proxima-nova-semibold.woff") format("woff"), url("../fonts/proxima-nova-semibold.ttf") format("truetype"), url("../fonts/proxima-nova-semibold.svg#proxima-nova-semibold") format("svg"); }
 
 @font-face {
   font-family: proxima-nova-regular;
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima-nova-regular.woff2") format("woff2"), url("/fonts/proxima-nova-regular.woff") format("woff"), url("/fonts/proxima-nova-regular.ttf") format("truetype"), url("/fonts/proxima-nova-regular.svg#proxima-nova-regular") format("svg"); }
+  src: url("../fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-regular.woff2") format("woff2"), url("../fonts/proxima-nova-regular.woff") format("woff"), url("../fonts/proxima-nova-regular.ttf") format("truetype"), url("../fonts/proxima-nova-regular.svg#proxima-nova-regular") format("svg"); }
 
 * {
   -webkit-box-sizing: border-box;

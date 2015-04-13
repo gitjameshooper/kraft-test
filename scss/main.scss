@@ -1,8 +1,8 @@
 @import "bourbon";
 @import "neat";
-@include font-face(proxima-nova-bold, "/fonts/proxima-nova-bold");
-@include font-face(proxima-nova-semibold, "/fonts/proxima-nova-semibold");
-@include font-face(proxima-nova-regular, "/fonts/proxima-nova-regular");
+@include font-face(proxima-nova-bold, "../fonts/proxima-nova-bold");
+@include font-face(proxima-nova-semibold, "../fonts/proxima-nova-semibold");
+@include font-face(proxima-nova-regular, "../fonts/proxima-nova-regular");
 $tablet: new-breakpoint(max-width 1024px 2);
 $mobile: new-breakpoint(max-width 768px 2);
 $mobile470: new-breakpoint(max-width 470px 2);
