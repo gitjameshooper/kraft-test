@@ -1,0 +1,241 @@
+@import "bourbon";
+@import "neat";
+@include font-face(proxima-nova-bold, "/fonts/proxima-nova-bold");
+@include font-face(proxima-nova-semibold, "/fonts/proxima-nova-semibold");
+@include font-face(proxima-nova-regular, "/fonts/proxima-nova-regular");
+$tablet: new-breakpoint(max-width 1024px 2);
+$mobile: new-breakpoint(max-width 768px 2);
+$mobile470: new-breakpoint(max-width 470px 2);
+ 
+*{
+	@include box-sizing(border-box);
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+html{
+	min-height: 100%;
+	position: relative;
+}
+body {
+	font: 10px proxima-nova-regular;
+	margin: 0 0 234px;
+	overflow-x: hidden;
+  	.wrapper{
+  		@include outer-container(1170px);
+  		padding: 5% 15px 0;
+  		clear: both;
+  		text-align: center;
+  	}
+  	header{
+  		background:url('../img/header-bg.jpg') no-repeat;
+  		background-position: center;
+  		background-size: cover;
+  		color: #fff;
+  		.logo{
+  			background:url('../img/logo.png');
+  			height: 65px;
+  			width: 92px;
+  			display: block;
+  			float: left;
+  		}
+  		
+  		.icon-mobile{
+  			display: none;
+  			cursor: pointer;
+  			float: right;
+  			background:url('../img/icon-mobile.png') no-repeat;
+  			width: 50px;
+  			height: 50px;
+  			@include media($mobile) {
+  				 display: block;
+  			}
+  		}
+  		nav{
+  				float: right;
+  				padding: 20px 0;
+  				@include media($mobile) {
+  					position: absolute;
+  					z-index: 1;
+						right: -50%;
+						height: 100%;
+						background: #000;
+						width: 50%;
+						top: 0;
+  				}
+  			a{
+  				font:1.8em proxima-nova-semibold;
+  				color: #fff;
+  				text-decoration: none;
+  				text-transform: uppercase;
+  				margin: 0 20px;
+  				@include media($mobile) {
+					  margin: 0;
+					  display: inline-block;
+					  float: left;
+					  clear: both;
+					  background: #333;
+					  padding: 5px 15px;
+					  width: 100%;
+					  box-shadow: inset 1px 1px 5px #000;
+					  text-align: left;
+					}
+  				&:last-child{
+  					margin-right:0;
+  				}
+  				&:hover{
+  					border-bottom: 3px solid #70df88;
+  					@include media($mobile) {
+  						border-bottom: none;
+  					}
+  				}
+  			}
+  		}
+  		h1{
+  			font: 7.5em proxima-nova-bold;
+  			color: #f7f7f7;
+  			margin-bottom: 15%;
+  			@include media($mobile) {
+  				font-size: 4.5em;
+  			}
+  		}
+  		h2{
+  			font: 3.5em proxima-nova-semibold;
+  			color: #f7f7f7;
+  			clear: both;
+  			margin-top: 20%;
+  			@include media($mobile) {
+  				font-size: 2.5em;
+  			}
+  		}
+  		.btn-read{
+  			color: #57ab4a;
+  			font: 1.6em proxima-nova-bold;
+  			border-radius: 5px;
+  			background: #f6fef7;
+  			margin-bottom: 5%;
+  			padding: 15px 40px;
+  			display: inline-block;
+  			text-decoration: none;
+  			text-transform: uppercase;
+  		}
+  	}
+	#section-1{
+		padding-bottom: 10%;
+		.wrapper{
+			padding-top:5%;
+		}
+		h2{
+			color: #4b4845;
+			font: 4.8em proxima-nova-semibold;
+
+		}
+		h3{
+			font-size: 2.5em;
+			color: #afafaf;
+			margin-bottom: 5%;
+		}
+		
+  	article{
+  		@include span-columns(4);
+  		@include media($mobile) {
+  			@include span-columns(2);
+  			margin-top: 5%;
+  		}
+  		h4{
+				font: 2.4em proxima-nova-semibold;
+				color: #4b4845;
+				margin: 15px 0 10px;
+			}
+  		img{
+  			width: 100%;
+  		}
+  		p{
+  			font-size: 1.8em;
+  			color: #64615f;
+  			margin-bottom: 15px;
+  		}
+  		a{
+  			text-decoration: none;
+  			text-transform: uppercase;
+  			font: 1.5em proxima-nova-bold;
+  			color:#57ab4a;
+  			&:hover{
+  				text-decoration:underline;
+  			}
+  		}
+  	}
+
+	}
+	footer{
+		background:url('../img/footer-bg.jpg') no-repeat;
+  	background-size: cover;
+  	background-position: center;
+  	width: 100%;
+  	height: 234px;
+  	position: absolute;
+  	bottom: 0;
+  	p{
+  		font: 1.8em proxima-nova-semibold;
+  		color: #fff;
+  		margin-bottom: 3%;
+  	}
+  	select{
+  		cursor: pointer;
+  		font: 1.5em proxima-nova-bold;
+  		text-transform: uppercase;
+  		background: #fff;
+  		@include border-top-radius(5px);
+  		@include border-bottom-radius(5px);
+  		padding: 12px 29px;
+  		color: #57ac4a;
+  		margin-right: 25px;
+  		height: 45px;
+  		@include media($mobile) {
+  			margin: 0 0 4%;
+  		}
+  		@include media($mobile470) {
+  			height: 40px;
+  			padding: 9px 29px;
+  		}
+  	}
+  	.email-wrap{
+  		display: inline-block;
+  		input[type="text"]{
+	  		font-size: 1.8em;
+	  		@include border-left-radius(5px);
+	  		line-height: 1.2;
+	  		padding: 12px 29px;
+	  		height: 45px;
+	  		color: #59635b;
+	  		border: none;
+	  		@include media($mobile470) {
+	  		  width: 100%;
+ 					max-width: 260px;
+ 					@include border-right-radius(5px);
+ 				}
+	  	}
+	  	button{
+	  		cursor: pointer;
+	  		font: 1.5em proxima-nova-bold;
+	  		color: #fff;
+	  		text-transform: uppercase;
+	  		background: #57ac4a;
+	  		@include border-right-radius(5px);
+	  		padding: 12px 29px;
+	  		line-height: 1.2;
+	  		height: 45px;
+	  		border: none;
+	  		float: right;
+	  		@include media($mobile470) {
+	  		  float: none;
+  				margin-top: 3%;
+  				height: 40px;
+  				padding: 9px 29px;
+ 					@include border-left-radius(5px);
+
+ 				}
+	  	}
+  	}
+	}
+}
